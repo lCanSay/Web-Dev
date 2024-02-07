@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}   
+
+body {
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    min-height: 100vh;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 2vw;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.instaLogo {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.input {
+    width: 90%;
+    padding: .6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    margin: 3px;
+    height: 30px;
+    background-color: #f7f7f7;
+}
+
+.login-btn {
+    width: 95%;
+    padding: .4rem;
+    font-weight: 700;
+    background-color: rgb(1, 183, 255);
+    border: none;
+    border-radius: 12px;
+    margin: 8px 0px;
+    color: white;
+    height: 40px;
+}
+
+#or:before,
+#or:after {
+    content: '------------------------';
+    color: rgba(128, 128, 128, 0.7);
+    margin: 0 10px;
+}
+
+.fb-login {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 95%;
+    color: #0a4261;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.sign-up {
+    text-align: center;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#play {
+    margin-left: 50px;
+    width: 190px;
+}
+
+#microsoft {
+    width: 135px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #4cb5f9;
+    border-radius: 7px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 7px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+
+footer {
+    bottom: 0;
+    color: #949494;
+    text-align: center;
+    font-size: small;
+}
+
+span {
+    margin: 0 5px 0 5px;
+}
+
+span:hover {
+    text-decoration: underline;
+}
