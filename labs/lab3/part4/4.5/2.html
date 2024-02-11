@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function Accumulator(startingValue){
+            this.sum = startingValue;
+            this.read = function(){
+                this.sum += +prompt("Enter your number: ", "");
+            };
+        }
+
+        let accumulator = new Accumulator(1); // initial value 1
+
+        accumulator.read(); // adds the user-entered value
+        accumulator.read(); // adds the user-entered value
+
+        alert(accumulator.sum); // shows the sum of these values
+    </script>
+
+</body>
+
+</html>
