@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        let styles = ["Jazz", "Blues"];
+        styles.push("Rock'n-Roll"); 
+        styles[Math.floor(styles.length / 2)] = "Classics";
+        alert (styles.shift());
+        styles.unshift("Rap", "Regae");
+
+
+        alert("Elements of styles: ");
+        for (key of styles) {
+            alert(key); 
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function sumInput() {
+            let input = prompt("Enter a number: ", 0);
+            let sum = 0;
+            let nums = [];
+
+            while (isFinite(input) && input !== null && input !== "") {
+                nums.push(+input);
+                input = prompt("Enter a new number: ", 0);
+            }
+
+            for (key of nums) {
+                sum += key;
+            }
+
+            return sum;
+        }
+
+        alert("Sum of the numbers is: " + sumInput());
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function filterRange(arr, a, b) {
+            for (let i = arr.length - 1; i >= 0; i--) {
+                let val = arr[i];
+                if (val < a || val > b) {
+                    arr.splice(i, 1);
+                }
+            }
+        }
+
+        let arr = [1,2,3,4,5,6];
+        filterRange(arr, 2, 5);
+        alert(arr);
+    </script>
+
+</body>
+
+</html>

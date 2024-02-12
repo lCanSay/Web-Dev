@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        function filterRange(arr, a, b) {
+            let result = [];
+            for (let key = 0; key < arr.length; key++) {
+                if (arr[key] >= a && arr[key] <= b) {
+                    result.push(arr[key]);
+                }
+            }
+
+            return result;
+        }
+
+        alert(filterRange([1,2,3,4,5,6], 2, 5));
+    </script>
+
+</body>
+
+</html>
