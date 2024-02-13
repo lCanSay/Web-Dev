@@ -1,0 +1,120 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #0C2D57;
+    min-height: 100vh;
+}
+
+#header {
+    background-color: black;
+    font-size: medium;
+    color:aliceblue;
+    font-size: 30px;
+    height: 65px;
+}
+
+#header p {
+    margin: 0;
+    padding: 10px 0 0 70px;
+}
+
+#container {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 80px auto 20px;
+    padding: 20px 30px 70px;
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 6px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#inputBox {
+    flex: 1;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.addBtn {
+    border: none;
+    outline: none;
+    padding: 16px 45px;
+    background-color: #FC6736;
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#listContainer {
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.listElement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.listElement input {
+    margin-right: 25px;
+    height: 23px;
+    width: 23px;
+    accent-color: #e98868;
+}
+
+/* Checked task */
+.listElementChecked {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #555;
+    text-decoration: line-through;
+}
+.listElementChecked input {
+    margin-right: 25px;
+    height: 23px;
+    width: 23px;
+    accent-color: #e98868;
+}
+
+span {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30%;
+    margin-left: 340px;
+}
+
+span:hover {
+    background-color: #edeef0;
+}
