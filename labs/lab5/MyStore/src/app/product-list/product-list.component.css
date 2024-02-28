@@ -1,0 +1,46 @@
+
+.listDisplay {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    text-align: center;
+    height: 180px;
+    width: 230px;
+}
+
+.product-card {
+    width: 284px;
+    height: 390px;
+    border: 1px solid #c8c6c6;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.description {
+    height: 100px;
+    margin-bottom: 14px;
+}
+
+
+.buttons {
+    display: flex;
+    align-content: baseline;
+    justify-content: space-around;
+}
+
+.buttonTg {
+    background-image: url('C:/KBTU/WebDev/labs/lab4/MyStore/img/telegram_2111710.png');
+}
+app-product-alerts,
+button {
+    height: 32px;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
