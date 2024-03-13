@@ -1,109 +1,192 @@
 export interface Product {
   id: number;
   name: string;
+  category: number;
   price: number;
-  description: string;
-  image: string;
-  rating: string;
+  likes: number;
   link: string;
+  imageUrl: string;
 }
 
 export const products = [
   {
-    id: 1,
-    name: 'FrekenBok',
-    price: 1500,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h12/h0a/64046956838942.jpg?format=gallery-medium',
-    rating: '4.6',
-    link: 'https://kaspi.kz/shop/p/freken-bok-bambukovye-250-sht-101787149/?c=750000000',
+      id: 1,
+      name: 'Kazakhstan',
+      category: 1,
+      price: 650,
+      likes: 0,
+      link: 'https://kaspi.kz/shop/p/kitkat-shokoladnyi-batonchik-molochnyi-vafli-41-5-g-100801573/?c=750000000&sr=4&qid=a3f04ea6cfe3ee33a74cce7e53c9aa91&ref=shared_link',
+      imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h21/h90/70365637279774.jpg?format=gallery-medium'
   },
   {
     id: 2,
-    name: 'Qualita',
-    price: 699,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h81/h3e/64045843513374.jpg?format=gallery-medium',
-    rating: '4.1',
-    link: 'https://kaspi.kz/shop/p/qualita-bambukovye-200-sht-101787137/?c=750000000',
+    name: 'Kazakhstan',
+    category: 1,
+    price: 650,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/kitkat-shokoladnyi-batonchik-molochnyi-vafli-41-5-g-100801573/?c=750000000&sr=4&qid=a3f04ea6cfe3ee33a74cce7e53c9aa91&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h21/h90/70365637279774.jpg?format=gallery-medium'
   },
   {
     id: 3,
-    name: 'Bamboo',
-    price: 299,
-    description: 'Bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hff/h4a/67581312401438.jpg?format=gallery-medium',
-    rating: '3.0',
-    link: 'https://kaspi.kz/shop/p/bambukovye-1020500-500-sht-108324124/?c=750000000'
+    name: 'Kazakhstan',
+    category: 1,
+    price: 650,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/kitkat-shokoladnyi-batonchik-molochnyi-vafli-41-5-g-100801573/?c=750000000&sr=4&qid=a3f04ea6cfe3ee33a74cce7e53c9aa91&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h21/h90/70365637279774.jpg?format=gallery-medium'
   },
   {
     id: 4,
-    name: 'Dollar',
-    price: 699,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h50/h85/64455679180830.jpg?format=gallery-medium',
-    rating: '4.7',
-    link: 'https://kaspi.kz/shop/p/gmshop-00000004515-200-sht-104232336/?c=750000000'
+    name: 'Kazakhstan',
+    category: 1,
+    price: 650,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/kitkat-shokoladnyi-batonchik-molochnyi-vafli-41-5-g-100801573/?c=750000000&sr=4&qid=a3f04ea6cfe3ee33a74cce7e53c9aa91&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h21/h90/70365637279774.jpg?format=gallery-medium'
   },
   {
     id: 5,
-    name: 'Dollar',
-    price: 699,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h50/h85/64455679180830.jpg?format=gallery-medium',
-    rating: '4.8',
-    link: 'https://kaspi.kz/shop/p/zubochistki-11623-30-sht-110142405/?c=750000000'
+    name: 'Kazakhstan',
+    category: 1,
+    price: 650,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/kitkat-shokoladnyi-batonchik-molochnyi-vafli-41-5-g-100801573/?c=750000000&sr=4&qid=a3f04ea6cfe3ee33a74cce7e53c9aa91&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h21/h90/70365637279774.jpg?format=gallery-medium'
   },
   {
     id: 6,
-    name: 'FrekenBok',
-    price: 699,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h12/h0a/64046956838942.jpg?format=gallery-medium',
-    rating: '4.9',
-    link: 'https://kaspi.kz/shop/p/286790-280-sht-110566440/?c=750000000'
+    name: 'Fuse Tea',
+    category: 2,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/holodnyi-chai-fuse-tea-mango-romashka-1-l-101004192/?c=750000000',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h0d/h46/64148420853790.jpg?format=preview-medium'
   },
   {
     id: 7,
-    name: 'Qualita',
-    price: 699,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h81/h3e/64045843513374.jpg?format=gallery-medium',
-    rating: '4.0',
-    link: 'https://kaspi.kz/shop/p/zubochistki-111111-1-sht-109269050/?c=750000000'
+    name: 'Fuse Tea',
+    category: 2,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/holodnyi-chai-fuse-tea-mango-romashka-1-l-101004192/?c=750000000',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h0d/h46/64148420853790.jpg?format=preview-medium'
   },
   {
     id: 8,
-    name: 'Vior',
-    price: 699,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/hc5/h61/64168547549214.jpg?format=gallery-medium',
-    rating: '4.5',
-    link: 'https://kaspi.kz/shop/p/aviora-401-488-1000-sht-102771363/?c=750000000'
+    name: 'Fuse Tea',
+    category: 2,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/holodnyi-chai-fuse-tea-mango-romashka-1-l-101004192/?c=750000000',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h0d/h46/64148420853790.jpg?format=preview-medium'
   },
   {
     id: 9,
-    name: 'Neet',
-    price: 699,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h4d/hea/66906611777566.jpg?format=gallery-medium',
-    rating: '4.4',
-    link: 'https://kaspi.kz/shop/p/zubochistka-934520-30-sht-108047735/?c=750000000'
+    name: 'Fuse Tea',
+    category: 2,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/holodnyi-chai-fuse-tea-mango-romashka-1-l-101004192/?c=750000000',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h0d/h46/64148420853790.jpg?format=preview-medium'
   },
   {
     id: 10,
-    name: 'PrCon',
-    price: 699,
-    description: 'Great bamboo toothpicks',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h50/h85/64455679180830.jpg?format=gallery-medium',
-    rating: '3.7',
-    link: ''
+    name: 'Fuse Tea',
+    category: 2,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/holodnyi-chai-fuse-tea-mango-romashka-1-l-101004192/?c=750000000',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h0d/h46/64148420853790.jpg?format=preview-medium'
+  },
+  {
+    id: 11,
+    name: 'Bonduele',
+    category: 3,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/bonduelle-konservirovannye-ovoschi-kukuruza-v-sobstvennom-soku-340-g-100980360/?c=750000000&sr=1&qid=8fd60257404e899ae2148c7747178890&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h1d/h60/84662766141470.png?format=gallery-medium'
+  },
+  {
+    id: 12,
+    name: 'Bonduele',
+    category: 3,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/bonduelle-konservirovannye-ovoschi-kukuruza-v-sobstvennom-soku-340-g-100980360/?c=750000000&sr=1&qid=8fd60257404e899ae2148c7747178890&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h1d/h60/84662766141470.png?format=gallery-medium'
+  },
+  {
+    id: 13,
+    name: 'Bonduele',
+    category: 3,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/bonduelle-konservirovannye-ovoschi-kukuruza-v-sobstvennom-soku-340-g-100980360/?c=750000000&sr=1&qid=8fd60257404e899ae2148c7747178890&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h1d/h60/84662766141470.png?format=gallery-medium'
+  },
+  {
+    id: 14,
+    name: 'Bonduele',
+    category: 3,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/bonduelle-konservirovannye-ovoschi-kukuruza-v-sobstvennom-soku-340-g-100980360/?c=750000000&sr=1&qid=8fd60257404e899ae2148c7747178890&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h1d/h60/84662766141470.png?format=gallery-medium'
+  },
+  {
+    id: 15,
+    name: 'Bonduele',
+    category: 3,
+    price: 450,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/bonduelle-konservirovannye-ovoschi-kukuruza-v-sobstvennom-soku-340-g-100980360/?c=750000000&sr=1&qid=8fd60257404e899ae2148c7747178890&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h1d/h60/84662766141470.png?format=gallery-medium'
+  },
+  {
+    id: 16,
+    name: 'Bell Pepper',
+    category: 4,
+    price: 1100,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/magnum-perets-sladkii-svetofor-zheltyi-iran-102289200/?c=750000000&sr=23&qid=f916bdd1db1477cbc3bf40b85456d7fc&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/hc1/64313355894814.jpg?format=gallery-medium'
+  },
+  {
+    id: 17,
+    name: 'Bell Pepper',
+    category: 4,
+    price: 1100,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/magnum-perets-sladkii-svetofor-zheltyi-iran-102289200/?c=750000000&sr=23&qid=f916bdd1db1477cbc3bf40b85456d7fc&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/hc1/64313355894814.jpg?format=gallery-medium'
+  },
+  {
+    id: 18,
+    name: 'Bell Pepper',
+    category: 4,
+    price: 1100,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/magnum-perets-sladkii-svetofor-zheltyi-iran-102289200/?c=750000000&sr=23&qid=f916bdd1db1477cbc3bf40b85456d7fc&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/hc1/64313355894814.jpg?format=gallery-medium'
+  },
+  {
+    id: 19,
+    name: 'Bell Pepper',
+    category: 4,
+    price: 1100,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/magnum-perets-sladkii-svetofor-zheltyi-iran-102289200/?c=750000000&sr=23&qid=f916bdd1db1477cbc3bf40b85456d7fc&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/hc1/64313355894814.jpg?format=gallery-medium'
+  },
+  {
+    id: 20,
+    name: 'Bell Pepper',
+    category: 4,
+    price: 1100,
+    likes: 0,
+    link: 'https://kaspi.kz/shop/p/magnum-perets-sladkii-svetofor-zheltyi-iran-102289200/?c=750000000&sr=23&qid=f916bdd1db1477cbc3bf40b85456d7fc&ref=shared_link',
+    imageUrl: 'https://resources.cdn-kaspi.kz/img/m/p/h6e/hc1/64313355894814.jpg?format=gallery-medium'
   },
 ];
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

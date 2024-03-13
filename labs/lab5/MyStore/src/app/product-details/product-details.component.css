@@ -1,0 +1,39 @@
+
+.content {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-details {
+    width: 500px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 3%;
+    margin-top: 20px; 
+}
+
+.characteristics {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.characteristics h3 {
+    margin-top: 0;
+}
+
+img {
+    max-width: 200px; 
+    height: auto;
+    margin-right: 20px;
+     
+}
+
+.content h2 {
+    margin-bottom: 20px; 
+    text-align: center;
+}

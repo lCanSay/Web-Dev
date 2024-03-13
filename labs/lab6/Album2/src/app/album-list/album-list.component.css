@@ -1,0 +1,36 @@
+
+.header {
+    text-align: center;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    text-align: center;
+    height: 180px;
+    width: 200px;
+}
+
+.album-card {
+    text-align: center;
+    width: 245px;
+    height: 300px;
+    border: 1px solid #c8c6c6;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.description {
+    height: 100px;
+    margin-bottom: 14px;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

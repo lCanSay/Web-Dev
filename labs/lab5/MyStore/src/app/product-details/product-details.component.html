@@ -1,7 +1,13 @@
-<h2>Product Details</h2>
+<div class="content">
+  <h2>Product Details</h2>
 
-<div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
+  <div class="main">
+      <div class="product-details" *ngIf="product">
+          <div class="characteristics">
+              <h3>{{product.name}}</h3>
+              <h4>Price: {{product.price}} ₸</h4>
+          </div>
+          <img src="{{product.imageUrl}}" alt="product photo">
+      </div>
+  </div>
 </div>

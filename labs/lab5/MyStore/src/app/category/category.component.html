@@ -1,0 +1,23 @@
+<div>
+    <div class="header">
+        <h1>Select Category</h1>
+    </div>
+
+    <div class="container">
+        <div class="list">
+            <div *ngFor="let category of categories" class = "category-card">
+                <div class = "card-image">
+                    <img [src] = "" [alt] = "category.name" style="width: 200px;"/>
+                </div>
+                <div class = "description">
+                    <h3>
+                        <a [title]="category.name + ' details'"
+                        [routerLink]="['/categories', category.id]">
+                        {{ category.name }}
+                        </a>
+                    </h3>
+            </div>
+        </div>   
+    </div>
+</div>
+
