@@ -1,6 +1,10 @@
 <div>
     <div class="header">
         <h1>Select Album</h1>
+        <div>
+            <input type="text" [(ngModel)]="newAlbumTitle" placeholder="Enter album title">
+            <button (click)="createAlbum()">Create</button>
+        </div>
     </div>
 
     <div class="container">

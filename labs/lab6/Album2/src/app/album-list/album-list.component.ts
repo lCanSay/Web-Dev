@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './album-list.component.css'
 })
 export class AlbumListComponent implements OnInit{
+  newAlbumTitle: string = '';
   albums! : Album[];
   altAlbums: Album[] | undefined;
 
@@ -25,11 +26,15 @@ export class AlbumListComponent implements OnInit{
   }
 
   getAlbums() {
-    //this.loaded = false;
     this.albumService.getAlbums().subscribe((albums) => {
       this.albums = albums;
-      //this.loaded = true;
     });
+  }
+
+  createAlbum() {
+    const newAlbum: Album = { id: this.albums.length + 1, title: this.newAlbumTitle };
+    this.albums.push(newAlbum);
+    this.newAlbumTitle = '';
   }
 
   deleteAlbum(id: number) {
