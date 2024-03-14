@@ -1,0 +1,24 @@
+<div>
+    <div class = "top">
+        <h3>Post detail #{{album.id}}</h3>
+  
+        <h4>{{album.title}}</h4>
+    </div>
+
+    <div class = "photo-link">
+        <a routerLink="../" class="photo-link">Photos</a>
+    </div>
+    
+    <br>
+</div>
+  
+
+<fieldset>
+    <label for="title">Title:</label>
+    <input type="text" [(ngModel)]="album.title" id="title"> <br>
+    <button (click)="updateAlbum()">Save</button>
+</fieldset>
+
+<div>
+    <a [routerLink]="['/albums']"><button>Back</button></a>
+</div>

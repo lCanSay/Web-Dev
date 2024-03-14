@@ -1,0 +1,31 @@
+.albums {
+    margin-left: 10px;
+}
+
+.top {
+    text-align: center;
+    font-size: 20px;
+}
+fieldset {
+    text-align: center;
+    border: none;
+}
+
+label, input {
+    font-size: 18px;
+}
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(208, 236, 197);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.photo-link {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+}

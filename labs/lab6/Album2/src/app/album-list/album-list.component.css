@@ -25,8 +25,18 @@
 }
 
 .description {
-    height: 100px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.but {
+    text-align: center;
     margin-bottom: 14px;
+}
+
+.delete-btn {
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 /*

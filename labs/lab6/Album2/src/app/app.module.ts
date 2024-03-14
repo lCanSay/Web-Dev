@@ -10,13 +10,14 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AlbumListComponent } from './album-list/album-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { AlbumPhotosComponent } from './album-photos/album-photos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    AlbumListComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,10 +28,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'albums', component: AlbumListComponent },
-      // { path: 'products/:productId', component: ProductDetailsComponent},
-      // { path: 'categories/:categoryId', component: ProductListComponent },
-      // // { path: 'cart', component: CartComponent },
-      // // { path: 'shipping', component: ShippingComponent },
+      { path: 'albums/:id', component: AlbumDetailComponent},
+      { path: 'albums/:id/photos', component: AlbumPhotosComponent },
       { path: '**', component: NotFoundComponent, title: '404 Not Found'}
     ])
   ],
